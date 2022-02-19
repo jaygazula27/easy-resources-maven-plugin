@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>@project.groupId@</groupId>
+    <artifactId>base-it</artifactId>
+    <version>@project.version@</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <artifactId>properties-constants-it</artifactId>
+  <name>properties-constants-it</name>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>@project.groupId@</groupId>
+        <artifactId>@project.artifactId@</artifactId>
+        <executions>
+          <execution>
+            <id>generate-properties-constants</id>
+            <goals>
+              <goal>properties-constants</goal>
+            </goals>
+            <configuration>
+              <propertiesFiles>
+                <propertiesFile>
+                  <file>${project.basedir}/src/main/resources/database.properties</file>
+                  <generatedClassName>DatabaseProperties</generatedClassName>
+                  <generatedPackageName>com.jgazula</generatedPackageName>
+                </propertiesFile>
+                <propertiesFile>
+                  <file>${project.basedir}/src/main/resources/main.properties</file>
+                  <generatedClassName>MainProperties</generatedClassName>
+                  <generatedPackageName>com.jgazula</generatedPackageName>
+                </propertiesFile>
+              </propertiesFiles>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>

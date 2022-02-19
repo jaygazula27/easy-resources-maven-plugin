@@ -2,15 +2,17 @@ package com.jgazula.typesaferesources.maven.propertiesconstants;
 
 import com.jgazula.typesaferesources.core.util.ValidationException;
 import java.io.File;
-import org.jetbrains.annotations.Nullable;
 
 public class PropertiesFileConfiguration {
 
-  @Nullable private File file;
+  @SuppressWarnings("NullAway.Init")
+  private File file;
 
-  @Nullable private String generatedPackageName;
+  @SuppressWarnings("NullAway.Init")
+  private String generatedPackageName;
 
-  @Nullable private String generatedClassName;
+  @SuppressWarnings("NullAway.Init")
+  private String generatedClassName;
 
   public File getFile() {
     if (file == null) {

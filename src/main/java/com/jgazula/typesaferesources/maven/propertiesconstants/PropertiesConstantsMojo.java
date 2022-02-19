@@ -46,6 +46,7 @@ public class PropertiesConstantsMojo extends AbstractMojo {
               .build();
 
       PropertiesConstants.create(config).generate();
+      mavenProject.addCompileSourceRoot(generatedSourcesDir.getAbsolutePath());
     } catch (ValidationException e) {
       throw new MojoFailureException(
           "Validation error when generating constants for properties file(s)", e);
