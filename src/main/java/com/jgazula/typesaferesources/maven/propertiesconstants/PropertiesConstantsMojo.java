@@ -36,10 +36,10 @@ public class PropertiesConstantsMojo extends AbstractMojo {
   @Override
   public void execute() throws MojoExecutionException, MojoFailureException {
     try {
-      List<PCFileConfig> fileConfigs =
+      var fileConfigs =
           propertiesFiles.stream().map(this::toPCFileConfig).collect(Collectors.toList());
 
-      PCConfig config =
+      var config =
           PCConfig.builder()
               .fileConfigs(fileConfigs)
               .destinationDir(generatedSourcesDir.toPath())
