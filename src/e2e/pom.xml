@@ -4,10 +4,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>@project.groupId@</groupId>
-    <artifactId>base-it</artifactId>
+    <artifactId>base-e2e</artifactId>
     <version>@project.version@</version>
     <packaging>pom</packaging>
-    <name>base-it</name>
+    <name>base-e2e</name>
 
     <dependencies>
         <dependency>
@@ -45,7 +45,8 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <java.version>8</java.version>
+        <java.version>11</java.version>
+        <maven.compiler.release>${java.version}</maven.compiler.release>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <maven.compiler.release>${java.version}</maven.compiler.release>

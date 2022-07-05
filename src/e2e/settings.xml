@@ -2,7 +2,7 @@
 <settings>
     <profiles>
         <profile>
-            <id>it-repo</id>
+            <id>e2e-repo</id>
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>

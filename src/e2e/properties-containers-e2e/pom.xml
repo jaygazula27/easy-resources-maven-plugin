@@ -5,13 +5,13 @@
 
     <parent>
         <groupId>@project.groupId@</groupId>
-        <artifactId>base-it</artifactId>
+        <artifactId>base-e2e</artifactId>
         <version>@project.version@</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>properties-constants-it</artifactId>
-    <name>properties-constants-it</name>
+    <artifactId>properties-constants-e2e</artifactId>
+    <name>properties-constants-e2e</name>
 
     <build>
         <plugins>
