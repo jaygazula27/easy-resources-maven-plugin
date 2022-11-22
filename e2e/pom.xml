@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>@project.groupId@</groupId>
-        <artifactId>base-e2e</artifactId>
-        <version>@project.version@</version>
-        <relativePath>../pom.xml</relativePath>
+        <groupId>com.jgazula</groupId>
+        <artifactId>typesafe-resources-maven-plugin-parent</artifactId>
+        <version>0.1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>properties-constants-e2e</artifactId>
-    <name>properties-constants-e2e</name>
+    <artifactId>e2e</artifactId>
 
     <build>
         <plugins>
             <plugin>
-                <groupId>@project.groupId@</groupId>
-                <artifactId>@project.artifactId@</artifactId>
+                <groupId>com.jgazula</groupId>
+                <artifactId>typesafe-resources-maven-plugin</artifactId>
                 <executions>
                     <execution>
                         <id>generate-properties-constants</id>
