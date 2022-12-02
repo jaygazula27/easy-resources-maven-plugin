@@ -1,9 +1,11 @@
-package com.jgazula;
+package com.e2e;
 
+import com.jgazula.DatabaseProperties;
+import com.jgazula.MainProperties;
 import org.junit.jupiter.api.Test;
 
-import java.util.Properties;
 import java.io.IOException;
+import java.util.Properties;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

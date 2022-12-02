@@ -17,6 +17,7 @@
             <plugin>
                 <groupId>com.jgazula</groupId>
                 <artifactId>typesafe-resources-maven-plugin</artifactId>
+                <version>${project.version}</version>
                 <executions>
                     <execution>
                         <id>generate-properties-constants</id>
