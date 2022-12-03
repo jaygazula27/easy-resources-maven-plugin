@@ -1,14 +1,9 @@
 package com.jgazula.easyresources.maven.propertiesconstants;
 
-import com.jgazula.easyresources.core.propertiesconstants.PCConfig;
-import com.jgazula.easyresources.core.propertiesconstants.PCFileConfig;
 import com.jgazula.easyresources.core.propertiesconstants.PropertiesConstants;
+import com.jgazula.easyresources.core.propertiesconstants.PropertiesConstantsConfig;
+import com.jgazula.easyresources.core.propertiesconstants.PropertiesConstantsFileConfig;
 import com.jgazula.easyresources.core.util.ValidationException;
-
-import java.io.File;
-import java.util.List;
-import java.util.stream.Collectors;
-
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.plugin.MojoFailureException;
@@ -16,6 +11,10 @@ import org.apache.maven.plugins.annotations.LifecyclePhase;
 import org.apache.maven.plugins.annotations.Mojo;
 import org.apache.maven.plugins.annotations.Parameter;
 import org.apache.maven.project.MavenProject;
+
+import java.io.File;
+import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * Defines the {@code properties-constants} goal that will generate sources which consist of constant fields
@@ -45,7 +44,7 @@ public class PropertiesConstantsMojo extends AbstractMojo {
             var fileConfigs = propertiesFiles.stream().map(this::toPCFileConfig)
                     .collect(Collectors.toList());
 
-            var config = PCConfig.builder()
+            var config = PropertiesConstantsConfig.builder()
                     .fileConfigs(fileConfigs)
                     .destinationDir(generatedSourcesDir.toPath())
                     .build();
@@ -59,8 +58,8 @@ public class PropertiesConstantsMojo extends AbstractMojo {
         }
     }
 
-    private PCFileConfig toPCFileConfig(PropertiesFileConfiguration config) {
-        return PCFileConfig.builder()
+    private PropertiesConstantsFileConfig toPCFileConfig(PropertiesFileConfiguration config) {
+        return PropertiesConstantsFileConfig.builder()
                 .propertiesPath(config.getFile().toPath())
                 .generatedClassName(config.getGeneratedClassName())
                 .generatedPackageName(config.getGeneratedPackageName())
