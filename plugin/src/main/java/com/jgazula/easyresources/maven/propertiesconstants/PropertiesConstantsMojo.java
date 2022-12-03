@@ -1,9 +1,9 @@
-package com.jgazula.typesaferesources.maven.propertiesconstants;
+package com.jgazula.easyresources.maven.propertiesconstants;
 
-import com.jgazula.typesaferesources.core.propertiesconstants.PCConfig;
-import com.jgazula.typesaferesources.core.propertiesconstants.PCFileConfig;
-import com.jgazula.typesaferesources.core.propertiesconstants.PropertiesConstants;
-import com.jgazula.typesaferesources.core.util.ValidationException;
+import com.jgazula.easyresources.core.propertiesconstants.PCConfig;
+import com.jgazula.easyresources.core.propertiesconstants.PCFileConfig;
+import com.jgazula.easyresources.core.propertiesconstants.PropertiesConstants;
+import com.jgazula.easyresources.core.util.ValidationException;
 
 import java.io.File;
 import java.util.List;
@@ -25,7 +25,7 @@ public class PropertiesConstantsMojo extends AbstractMojo {
     private MavenProject mavenProject;
 
     @SuppressWarnings("NullAway.Init")
-    @Parameter(defaultValue = "${project.build.directory}/generated-sources/typesafe-resources", readonly = true,
+    @Parameter(defaultValue = "${project.build.directory}/generated-sources/easy-resources", readonly = true,
             required = true)
     private File generatedSourcesDir;
 

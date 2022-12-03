@@ -1,6 +1,6 @@
-package com.jgazula.typesaferesources.maven.propertiesconstants;
+package com.jgazula.easyresources.maven.propertiesconstants;
 
-import com.jgazula.typesaferesources.core.util.ValidationException;
+import com.jgazula.easyresources.core.util.ValidationException;
 
 import java.io.File;
 

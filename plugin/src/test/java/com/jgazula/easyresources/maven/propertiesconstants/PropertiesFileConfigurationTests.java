@@ -1,9 +1,9 @@
-package com.jgazula.typesaferesources.maven.propertiesconstants;
+package com.jgazula.easyresources.maven.propertiesconstants;
 
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
 import static org.assertj.core.api.Assertions.assertThatNoException;
 
-import com.jgazula.typesaferesources.core.util.ValidationException;
+import com.jgazula.easyresources.core.util.ValidationException;
 
 import java.io.File;
 
