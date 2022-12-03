@@ -4,6 +4,9 @@ import com.jgazula.easyresources.core.util.ValidationException;
 
 import java.io.File;
 
+/**
+ * The configuration of the {@code properties-constants} goal used in {@link PropertiesConstantsMojo}.
+ */
 public class PropertiesFileConfiguration {
 
     @SuppressWarnings("NullAway.Init")
