@@ -81,3 +81,9 @@ public class DatabaseProperties {
     public static final String SPRING_DATASOURCE_DRIVER_CLASS_NAME = "spring.datasource.driver-class-name";
 }
 ```
+
+
+# Development
+
+* Requires Java 11 and Maven 3.
+* To build the project (and run unit and e2e tests): `mvn -U clean install`
