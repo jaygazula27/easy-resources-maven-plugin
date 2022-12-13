@@ -94,4 +94,4 @@ public class DatabaseProperties {
 
 ## License
 
-MIT License. Please see the [LICENSE file](https://github.com/jaygazula27/easy-resources-maven-plugin/blob/main/LICENSE) for more information.
+MIT License. Please see the [LICENSE](LICENSE) file for more information.
