@@ -28,13 +28,13 @@
                             <propertiesFiles>
                                 <propertiesFile>
                                     <file>${project.basedir}/src/main/resources/database.properties</file>
-                                    <generatedClassName>DatabaseProperties</generatedClassName>
                                     <generatedPackageName>com.jgazula</generatedPackageName>
+                                    <generatedClassName>DatabaseProperties</generatedClassName>
                                 </propertiesFile>
                                 <propertiesFile>
                                     <file>${project.basedir}/src/main/resources/main.properties</file>
-                                    <generatedClassName>MainProperties</generatedClassName>
                                     <generatedPackageName>com.jgazula</generatedPackageName>
+                                    <generatedClassName>MainProperties</generatedClassName>
                                 </propertiesFile>
                             </propertiesFiles>
                         </configuration>
