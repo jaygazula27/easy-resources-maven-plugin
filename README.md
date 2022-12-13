@@ -87,3 +87,8 @@ public class DatabaseProperties {
 
 * Requires Java 11 and Maven 3.
 * To build the project (and run unit and e2e tests): `mvn -U clean install`
+
+
+# License
+
+MIT License. Please see the [LICENSE file](https://github.com/jaygazula27/easy-resources-maven-plugin/blob/main/LICENSE) for more information.
