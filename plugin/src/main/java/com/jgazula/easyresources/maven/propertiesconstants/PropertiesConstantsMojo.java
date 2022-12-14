@@ -4,6 +4,7 @@ import com.jgazula.easyresources.core.propertiesconstants.PropertiesConstants;
 import com.jgazula.easyresources.core.propertiesconstants.PropertiesConstantsConfig;
 import com.jgazula.easyresources.core.propertiesconstants.PropertiesConstantsFileConfig;
 import com.jgazula.easyresources.core.util.ValidationException;
+import com.jgazula.easyresources.maven.Constants;
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.plugin.MojoFailureException;
@@ -45,6 +46,7 @@ public class PropertiesConstantsMojo extends AbstractMojo {
                     .collect(Collectors.toList());
 
             var config = PropertiesConstantsConfig.builder()
+                    .generatedBy(Constants.PLUGIN_NAME)
                     .fileConfigs(fileConfigs)
                     .destinationDir(generatedSourcesDir.toPath())
                     .build();
