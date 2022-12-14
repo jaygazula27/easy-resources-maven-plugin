@@ -1,12 +1,23 @@
 # easy-resources-maven-plugin
 
 
+# Table of contents
+* [Overview](#overview)
+* [Requirements](#requirements)
+* [Usage](#usage)
+    * [properties-constants](#properties-constants)
+* [Development](#development)
+* [License](#license)
+
+
 ## Overview
 
 This maven plugin enables easy and typesafe access to resources. This is achieved by generating code with the following features:
 * Classes consisting of `static final` fields which point to the keys of properties files.
 * Classes consisting of methods with the appropriate parameters for dynamic internationalization which allows for lookup of localized strings.
     * Feature implementation in progress.
+
+For the gradle alternative of this plugin, take a look at [easy-resources-gradle-plugin](https://github.com/jaygazula27/easy-resources-gradle-plugin).
 
 
 ## Requirements
@@ -15,7 +26,7 @@ This maven plugin enables easy and typesafe access to resources. This is achieve
 * Maven 3
 
 
-## Usage (Maven Goals)
+## Usage
 
 ### properties-constants
 
@@ -89,6 +100,7 @@ public class DatabaseProperties {
 ## Development
 
 * Requires Java 11 and Maven 3.
+* The parsing and class generation logic is implemented in a dependency of this project: [easy-resources-core](https://github.com/jaygazula27/easy-resources-core)
 * To build the project (and run unit and e2e tests): `mvn -U clean install`
 
 
