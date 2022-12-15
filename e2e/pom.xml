@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.jgazula</groupId>
+        <artifactId>easy-resources-maven-plugin-parent</artifactId>
+        <version>0.1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>e2e</artifactId>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.jgazula</groupId>
+                <artifactId>easy-resources-maven-plugin</artifactId>
+                <version>${project.version}</version>
+                <executions>
+                    <execution>
+                        <id>generate-properties-constants</id>
+                        <goals>
+                            <goal>properties-constants</goal>
+                        </goals>
+                        <configuration>
+                            <propertiesFiles>
+                                <propertiesFile>
+                                    <file>${project.basedir}/src/main/resources/database.properties</file>
+                                    <generatedPackageName>com.jgazula</generatedPackageName>
+                                    <generatedClassName>DatabaseProperties</generatedClassName>
+                                </propertiesFile>
+                                <propertiesFile>
+                                    <file>${project.basedir}/src/main/resources/main.properties</file>
+                                    <generatedPackageName>com.jgazula</generatedPackageName>
+                                    <generatedClassName>MainProperties</generatedClassName>
+                                </propertiesFile>
+                            </propertiesFiles>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>
