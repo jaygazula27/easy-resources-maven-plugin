@@ -54,7 +54,7 @@
 
     <profiles>
         <profile>
-            <id>release</id>
+            <id>cicd</id>
             <build>
                 <plugins>
                     <!-- The following plugins are necessary for deploying to maven central -->

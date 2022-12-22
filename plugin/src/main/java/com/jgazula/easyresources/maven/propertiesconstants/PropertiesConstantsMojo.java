@@ -20,7 +20,7 @@ import java.util.stream.Collectors;
 /**
  * Defines the {@code properties-constants} goal that will generate sources which consist of constant fields
  * that point to the keys of properties files.
- * <br/>
+ * <br>
  * This will allow developers to read data from properties files in a relatively typesafe manner.
  */
 @Mojo(name = "properties-constants", defaultPhase = LifecyclePhase.GENERATE_SOURCES)

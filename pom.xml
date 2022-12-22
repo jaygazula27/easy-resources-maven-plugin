@@ -83,7 +83,7 @@
 
     <profiles>
         <profile>
-            <id>release</id>
+            <id>cicd</id>
             <build>
                 <plugins>
                     <plugin>
@@ -93,7 +93,7 @@
                         <configuration>
                             <tagNameFormat>v@{project.version}</tagNameFormat>
                             <autoVersionSubmodules>true</autoVersionSubmodules>
-                            <releaseProfiles>release</releaseProfiles>
+                            <releaseProfiles>cicd</releaseProfiles>
                         </configuration>
                     </plugin>
                 </plugins>
