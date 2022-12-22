@@ -13,7 +13,7 @@
 
     <name>${project.groupId}:${project.artifactId}</name>
     <description>This maven plugin enables easy and typesafe access to resources.</description>
-    <url>https://github.com/jaygazula27/easy-resources-core</url>
+    <url>https://github.com/jaygazula27/easy-resources-maven-plugin</url>
 
     <dependencies>
         <dependency>
@@ -137,8 +137,8 @@
         <connection>scm:git:ssh://git@github.com/jaygazula27/easy-resources-maven-plugin.git</connection>
         <developerConnection>scm:git:https://github.com/jaygazula27/easy-resources-maven-plugin.git</developerConnection>
         <url>https://github.com/jaygazula27/easy-resources-maven-plugin</url>
-      <tag>HEAD</tag>
-  </scm>
+        <tag>HEAD</tag>
+    </scm>
 
     <distributionManagement>
         <snapshotRepository>

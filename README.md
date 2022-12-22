@@ -1,8 +1,8 @@
 # easy-resources-maven-plugin
 
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/jaygazula27/easy-resources-maven-plugin/maven-build.yml)
-![Maven Central](https://img.shields.io/maven-central/v/com.jgazula/easy-resources-maven-plugin)
-![GitHub](https://img.shields.io/github/license/jaygazula27/easy-resources-maven-plugin)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/jaygazula27/easy-resources-maven-plugin/maven-build.yml)](https://github.com/jaygazula27/easy-resources-maven-plugin/actions/workflows/maven-build.yml)
+[![Maven Central](https://img.shields.io/maven-central/v/com.jgazula/easy-resources-maven-plugin)](https://search.maven.org/artifact/com.jgazula/easy-resources-maven-plugin)
+[![GitHub](https://img.shields.io/github/license/jaygazula27/easy-resources-maven-plugin)](LICENSE)
 
 
 # Table of contents
@@ -20,6 +20,8 @@ This maven plugin enables easy and typesafe access to resources. This is achieve
 * Classes consisting of `static final` fields which point to the keys of properties files.
 * Classes consisting of methods with the appropriate parameters for dynamic internationalization which allows for lookup of localized strings.
     * Feature implementation in progress.
+
+Release notes are available in the [CHANGELOG](CHANGELOG.md) file.
 
 For the gradle alternative of this plugin, take a look at [easy-resources-gradle-plugin](https://github.com/jaygazula27/easy-resources-gradle-plugin).
 
