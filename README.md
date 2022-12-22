@@ -1,5 +1,9 @@
 # easy-resources-maven-plugin
 
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/jaygazula27/easy-resources-maven-plugin/maven-build.yml)
+![Maven Central](https://img.shields.io/maven-central/v/com.jgazula/easy-resources-maven-plugin)
+![GitHub](https://img.shields.io/github/license/jaygazula27/easy-resources-maven-plugin)
+
 
 # Table of contents
 * [Overview](#overview)
@@ -102,6 +106,8 @@ public class DatabaseProperties {
 * Requires Java 11 and Maven 3.
 * The parsing and class generation logic is implemented in a dependency of this project: [easy-resources-core](https://github.com/jaygazula27/easy-resources-core)
 * To build the project (and run unit and e2e tests): `mvn -U clean install`
+* Use the [Publish to Maven Central](https://github.com/jaygazula27/easy-resources-maven-plugin/actions/workflows/maven-publish.yml) workflow to deploy to maven central.
+  * Needs the following secrets: `OSSRH_USERNAME`, `OSSRH_PASSWORD`, `MAVEN_GPG_PASSPHRASE`, and `MAVEN_GPG_PRIVATE_KEY`
 
 
 ## License
