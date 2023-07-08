@@ -44,7 +44,7 @@ jobs:
           gpg-passphrase: MAVEN_GPG_PASSPHRASE
 
       - name: Build and deploy with Maven
-        run: mvn -B -Pcicd release:clean release:prepare release:perform -DdevelopmentVersion=${DEVELOPMENT_VERSION}
+        run: ./mvnw -B -Pcicd release:clean release:prepare release:perform -DdevelopmentVersion=${DEVELOPMENT_VERSION}
         env:
           MAVEN_USERNAME: ${{ secrets.OSSRH_USERNAME }}
           MAVEN_PASSWORD: ${{ secrets.OSSRH_PASSWORD }}
