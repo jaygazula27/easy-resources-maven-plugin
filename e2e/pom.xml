@@ -37,6 +37,22 @@
                             </propertiesFiles>
                         </configuration>
                     </execution>
+                    <execution>
+                        <id>generate-enhanced-resource-bundle</id>
+                        <goals>
+                            <goal>enhance-resource-bundle</goal>
+                        </goals>
+                        <configuration>
+                            <resourceBundles>
+                                <resourceBundle>
+                                    <bundlePath>${project.basedir}/src/main/resources/resourcebundle/</bundlePath>
+                                    <bundleName>AppBundle</bundleName>
+                                    <generatedPackageName>com.jgazula</generatedPackageName>
+                                    <generatedClassName>AppResourceBundle</generatedClassName>
+                                </resourceBundle>
+                            </resourceBundles>
+                        </configuration>
+                    </execution>
                 </executions>
             </plugin>
         </plugins>

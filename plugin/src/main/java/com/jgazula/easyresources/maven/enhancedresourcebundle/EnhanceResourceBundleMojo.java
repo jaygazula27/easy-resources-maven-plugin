@@ -17,13 +17,13 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * Defines the {@code enhanced-resource-bundle} goal that will generate sources which consist of
+ * Defines the {@code enhance-resource-bundle} goal that will generate sources which consist of
  * enhanced resource bundles.
  * <br>
  * This will allow developers to read data from resource bundles in a relatively typesafe manner.
  */
-@Mojo(name = "enhanced-resource-bundle", defaultPhase = LifecyclePhase.GENERATE_SOURCES)
-public class EnhancedResourceBundleMojo extends AbstractMojo {
+@Mojo(name = "enhance-resource-bundle", defaultPhase = LifecyclePhase.GENERATE_SOURCES)
+public class EnhanceResourceBundleMojo extends AbstractMojo {
 
     @SuppressWarnings("NullAway.Init")
     @Parameter(defaultValue = "${project}", readonly = true, required = true)

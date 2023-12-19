@@ -5,7 +5,7 @@ import com.jgazula.easyresources.core.util.ValidationException;
 import java.io.File;
 
 /**
- * The configuration of the {@code enhanced-resource-bundle} goal used in {@link EnhancedResourceBundleMojo}.
+ * The configuration of the {@code enhanced-resource-bundle} goal used in {@link EnhanceResourceBundleMojo}.
  */
 public class ResourceBundleConfiguration {
 
