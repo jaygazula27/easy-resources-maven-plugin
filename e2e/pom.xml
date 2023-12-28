@@ -45,7 +45,7 @@
                         <configuration>
                             <resourceBundles>
                                 <resourceBundle>
-                                    <bundlePath>${project.basedir}/src/main/resources/resourcebundle/</bundlePath>
+                                    <bundlePath>${project.basedir}/src/main/resources/</bundlePath>
                                     <bundleName>AppBundle</bundleName>
                                     <generatedPackageName>com.jgazula</generatedPackageName>
                                     <generatedClassName>AppResourceBundle</generatedClassName>
