@@ -22,7 +22,7 @@ import java.util.stream.Collectors;
  * <br>
  * This will allow developers to read data from resource bundles in a relatively typesafe manner.
  */
-@Mojo(name = "enhance-resource-bundle", defaultPhase = LifecyclePhase.GENERATE_SOURCES)
+@Mojo(name = "enhance-resource-bundle", defaultPhase = LifecyclePhase.GENERATE_SOURCES, threadSafe = true)
 public class EnhanceResourceBundleMojo extends AbstractMojo {
 
     @SuppressWarnings("NullAway.Init")

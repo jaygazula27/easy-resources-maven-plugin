@@ -22,7 +22,7 @@ import java.util.stream.Collectors;
  * <br>
  * This will allow developers to read data from properties files in a relatively typesafe manner.
  */
-@Mojo(name = "properties-constants", defaultPhase = LifecyclePhase.GENERATE_SOURCES)
+@Mojo(name = "properties-constants", defaultPhase = LifecyclePhase.GENERATE_SOURCES, threadSafe = true)
 public class PropertiesConstantsMojo extends AbstractMojo {
 
     @SuppressWarnings("NullAway.Init")
